@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cyber Security Awareness Quiz</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="app-container">
+
+
+        <!-- =====================================
+             START SCREEN
+        ====================================== -->
+
+        <section
+            id="start-screen"
+            class="screen active"
+        >
+
+            <div class="home-content">
+
+                <h1 class="main-title">
+                    Cyber Security Awareness Quiz
+                </h1>
+
+                <p class="subtitle">
+                    Can you identify whether a message is
+                    <span class="highlight-text">Normal</span>
+                    or
+                    <span class="highlight-text">Spam</span>?
+                </p>
+
+                <button
+                    id="start-btn"
+                    class="primary-btn"
+                >
+                    START QUIZ
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             QUIZ SCREEN
+        ====================================== -->
+
+        <section
+            id="quiz-screen"
+            class="screen quiz-screen"
+        >
+
+            <div class="quiz-wrapper">
+
+
+                <!-- TOP INFORMATION -->
+
+                <div class="quiz-top">
+
+                    <span id="question-number">
+                        Question 1 of 15
+                    </span>
+
+                    <span>
+                        Identify the message
+                    </span>
+
+                </div>
+
+
+                <!-- PROGRESS BAR -->
+
+                <div class="progress-container">
+
+                    <div
+                        id="progress-bar"
+                        class="progress-bar"
+                    ></div>
+
+                </div>
+
+
+                <!-- QUESTION CARD -->
+
+                <div class="question-card">
+
+                    <div class="message-label">
+                        MESSAGE ANALYSIS
+                    </div>
+
+
+                    <p id="question-text">
+                        Question will appear here.
+                    </p>
+
+
+                    <!-- ANSWER OPTIONS -->
+
+                    <div class="options">
+
+
+                        <!-- NORMAL ALWAYS LEFT -->
+
+                        <button
+                            id="normal-btn"
+                            class="option-btn normal-btn"
+                            data-answer="normal"
+                        >
+
+                            <span class="option-icon">
+                                ✓
+                            </span>
+
+                            <span>
+                                NORMAL
+                            </span>
+
+                        </button>
+
+
+                        <!-- SPAM ALWAYS RIGHT -->
+
+                        <button
+                            id="spam-btn"
+                            class="option-btn spam-btn"
+                            data-answer="spam"
+                        >
+
+                            <span class="option-icon">
+                                !
+                            </span>
+
+                            <span>
+                                SPAM
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- EXPLANATION -->
+
+                    <div
+                        id="explanation"
+                        class="explanation"
+                    ></div>
+
+
+                    <!-- NEXT BUTTON -->
+
+                    <button
+                        id="next-btn"
+                        class="next-btn"
+                        disabled
+                    >
+                        NEXT QUESTION
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             RESULT SCREEN
+        ====================================== -->
+
+        <section
+            id="result-screen"
+            class="screen"
+        >
+
+            <div
+                id="result-content"
+                class="result-content"
+            >
+
+                <div
+                    id="result-icon"
+                    class="result-icon"
+                >
+                    🏆
+                </div>
+
+
+                <h1 class="main-title">
+                    Quiz Completed!
+                </h1>
+
+
+                <p class="result-subtitle">
+                    You have completed the
+                    Cyber Security Awareness Quiz.
+                </p>
+
+
+                <!-- SCORE -->
+
+                <div class="score-panel">
+
+                    <div class="score-label">
+                        YOUR SCORE
+                    </div>
+
+                    <div
+                        id="final-score"
+                        class="final-score"
+                    >
+                        0 / 15
+                    </div>
+
+                    <div
+                        id="percentage"
+                        class="percentage"
+                    >
+                        0%
+                    </div>
+
+                </div>
+
+
+                <!-- SCORE MESSAGE -->
+
+                <p
+                    id="score-message"
+                    class="score-message"
+                >
+                    Your result will appear here.
+                </p>
+
+
+                <!-- RESULT BUTTONS -->
+
+                <div class="result-buttons">
+
+                    <button
+                        id="restart-btn"
+                        class="primary-btn"
+                    >
+                        PLAY AGAIN
+                    </button>
+
+
+                    <button
+                        id="exit-btn"
+                        class="exit-btn"
+                    >
+                        EXIT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             EXIT SCREEN
+        ====================================== -->
+
+        <section
+            id="exit-screen"
+            class="screen"
+        >
+
+            <div class="exit-content">
+
+                <div class="exit-icon">
+                    ✓
+                </div>
+
+
+                <h1 class="main-title">
+                    Thank You!
+                </h1>
+
+
+                <p class="exit-message">
+                    Thank you for completing the
+                    Cyber Security Awareness Quiz.
+                    <br><br>
+                    Stay alert. Stay safe.
+                </p>
+
+
+                <button
+                    id="home-btn"
+                    class="primary-btn"
+                >
+                    RETURN HOME
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
